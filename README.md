@@ -37,3 +37,5 @@ php bin/console make:entity
 > auteur
 > string
 > no
+#### prepare SQL to a migration's file in MySQL
+php bin/console make:migration
