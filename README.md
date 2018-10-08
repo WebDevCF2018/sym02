@@ -45,3 +45,5 @@ php bin/console doctrine:migrations:migrate
 datas/base01.sql
 #### for sql query in console
 php bin/console doctrine:query:sql "SELECT * FROM article"
+#### create a controller
+php bin/console make:controller AccueilController
