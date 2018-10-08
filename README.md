@@ -41,3 +41,7 @@ php bin/console make:entity
 php bin/console make:migration
 #### real migration
 php bin/console doctrine:migrations:migrate
+#### save DB in config folder
+datas/base01.sql
+#### for sql query in console
+php bin/console doctrine:query:sql "SELECT * FROM article"
