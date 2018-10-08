@@ -19,7 +19,7 @@
     {% for item in NosArticles %}
         <h2>{{ item.getTitre }}</h2>
         <h3>Le {{ item.getTemps|date("d/m/Y") }} par {{ item.getAuteur }}</h3>
-        <p>{{ item.getDescription|slice(0,150) }}</p><hr>
+        <p>{{ item.getDescription|slice(0,150) }}... | to be continuous tomorrow</p><hr>
     {% endfor %}
 </div>
 {% endblock %}
