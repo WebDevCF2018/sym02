@@ -20,3 +20,20 @@
 #### create the DB (database name is in .env)
 php bin/console doctrine:database:create
 
+#### create an entity, like a table in MySQL
+php bin/console make:entity
+> Article
+> titre
+> ? for view all type
+> string
+> 150
+> no
+> description
+> text
+> no
+> temps
+> datetime
+> yes
+> auteur
+> string
+> no
