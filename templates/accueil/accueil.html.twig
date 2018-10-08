@@ -15,7 +15,11 @@
     <ul>
         <li>Back to homepage</li>
         <li><a href="{{ path("debugAccueilController") }}">Debug to AccueilController.php</a></li>
-
     </ul>
+    {% for item in NosArticles %}
+        <h2>{{ item.getTitre }}</h2>
+        <h3>Le {{ item.getTemps|date("d/m/Y") }} par {{ item.getAuteur }}</h3>
+        <p>{{ item.getDescription|slice(0,150) }}</p><hr>
+    {% endfor %}
 </div>
 {% endblock %}
