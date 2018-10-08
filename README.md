@@ -39,3 +39,5 @@ php bin/console make:entity
 > no
 #### prepare SQL to a migration's file in MySQL
 php bin/console make:migration
+#### real migration
+php bin/console doctrine:migrations:migrate
